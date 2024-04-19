@@ -13,10 +13,10 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 800);
         stage.setTitle("Bataille Naval");
-        stage.setMinWidth(600);
-        stage.setMinHeight(800);
-        stage.setMaxHeight(700);
-        stage.setMaxWidth(1200);
+        stage.setMinWidth(800);
+        stage.setMinHeight(600);
+        stage.setMaxHeight(1200);
+        stage.setMaxWidth(700);
         stage.setScene(scene);
         stage.show();
     }
