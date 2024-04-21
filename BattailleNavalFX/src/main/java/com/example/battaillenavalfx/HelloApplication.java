@@ -3,6 +3,7 @@ package com.example.battaillenavalfx;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -10,6 +11,7 @@ import java.io.IOException;
 public class HelloApplication extends Application {
 
     private Stage stage;
+
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -21,9 +23,15 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader2 = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene2 = new Scene(fxmlLoader2.load(), 600, 800);
 
+        FXMLLoader fxmlLoader3 = new FXMLLoader(HelloApplication.class.getResource("scene-jeu.fxml"));
+        Scene scene3 = new Scene(fxmlLoader3.load(), 600, 800);
+
         BienvenueControlleur controller = fxmlLoader1.getController();
         controller.setStage(primaryStage);
         controller.setScene2(scene2);
+        InitialisationController controller1 = fxmlLoader2.getController();
+        controller1.setStage(primaryStage);
+        controller1.setScene2(scene3);
 
 
         stage.setTitle("Bataille Navale");
