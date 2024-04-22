@@ -1,6 +1,6 @@
 /*
 * Auteur : Thomas Chaussende
-* Date dernière mise a jour : 21/04/2024
+* Date dernière mise à jour : 21/04/2024
 * Nom du programme : BatailleNavalFX
 * le programme a pour objectif de simulé une partie de bataille naval.
 * La bataille navale est un jeu dont l'objectif est d'éliminer les bateaux adverses en tirant sur des cases jusqu'à toucher l'adversaire
@@ -36,7 +36,10 @@ public class HelloApplication extends Application {
     public void start(Stage primaryStage) throws IOException {
         stage = primaryStage;
         grille = new Grille();
-
+/*
+* scene1 = scene menu
+* scene2 = scene initialisation
+* scene3 = scene de jeu*/
         FXMLLoader fxmlLoader1 = new FXMLLoader(HelloApplication.class.getResource("scene-bienvenue.fxml"));
         Scene scene1 = new Scene(fxmlLoader1.load(), 600, 800);
 
@@ -56,7 +59,9 @@ public class HelloApplication extends Application {
         controller1.setHelloApplication(this);
 
         JeuControlleur jeuControlleur = fxmlLoader3.getController();
-
+        jeuControlleur.setStage(primaryStage);
+        jeuControlleur.setSceneRecommencer(scene2);
+        jeuControlleur.setSceneMenu(scene1);
         jeuControlleur.setHelloApplication(this);
 
 

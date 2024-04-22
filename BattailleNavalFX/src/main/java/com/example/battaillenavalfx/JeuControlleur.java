@@ -2,9 +2,12 @@ package com.example.battaillenavalfx;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import com.example.battaillenavalfx.*;
+import javafx.stage.Stage;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -13,9 +16,11 @@ import java.util.ResourceBundle;
  */
 public class JeuControlleur {
 
-
+    private Stage stage;
+    private Scene sceneRecommencer;
     private Grille grilleJoueur;
     private HelloApplication helloApplication;
+    private Scene sceneMenu;
 
     /**
      * Fonction appelé à la création de la scène, elle permet de récupérer la grille du joueur qui a fait durant le positionement des bateaux
@@ -54,7 +59,9 @@ public class JeuControlleur {
      */
     @FXML
     void Quitter(ActionEvent event) {
-
+        if (stage != null && sceneRecommencer!= null) {
+            stage.setScene(sceneMenu);
+        }
     }
 
     /**
@@ -64,6 +71,9 @@ public class JeuControlleur {
     @FXML
     void Recommencer(ActionEvent event) {
 
+        if (stage != null && sceneRecommencer!= null) {
+            stage.setScene(sceneRecommencer);
+        }
     }
 
     /**
@@ -75,8 +85,24 @@ public class JeuControlleur {
 
     }
 
-
-
+    /**
+     * Modifie le stage
+     * @param stage
+     */
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
+    /**
+     * Permet de récupérer la scene de mofification de la grille du joueur
+     */
+    public void setSceneRecommencer(Scene scene) {
+        this.sceneRecommencer = scene;
+    }    public void setSceneMenu(Scene scene) {
+        this.sceneMenu = scene;
+    }
+    /**
+     * Permet de récupérer la scene des menus
+     */
     public void setHelloApplication(HelloApplication helloApplication) {
         this.helloApplication = helloApplication;
     }

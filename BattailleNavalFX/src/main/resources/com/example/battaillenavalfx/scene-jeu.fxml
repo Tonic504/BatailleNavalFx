@@ -24,15 +24,19 @@
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <MenuButton mnemonicParsing="false" text="Option">
+            <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Option">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#Recommencer" text="Recommencer" />
                   <MenuItem mnemonicParsing="false" onAction="#Tricher" text="Tricher" />
                   <MenuItem mnemonicParsing="false" onAction="#Quitter" text="Quitter" />
                </items></MenuButton>
-            <Label fx:id="console" prefHeight="61.0" prefWidth="498.0" text="Label" />
+            <Label fx:id="console" prefHeight="25.0" prefWidth="423.0" text="Console">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></Label>
          </children>
       </HBox>
+      <Label text="Grille Ordinateur" />
       <StackPane maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
          <children>
             <ImageView fitHeight="330.0" fitWidth="330.0" StackPane.alignment="CENTER">
@@ -236,9 +240,10 @@
             </GridPane>
          </children>
          <VBox.margin>
-            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            <Insets left="20.0" right="20.0" />
          </VBox.margin>
       </StackPane>
+      <Label text="Grille Joueur" />
       <StackPane layoutX="160.0" layoutY="320.0" maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
          <children>
             <ImageView fitHeight="330.0" fitWidth="330.0" StackPane.alignment="CENTER">
