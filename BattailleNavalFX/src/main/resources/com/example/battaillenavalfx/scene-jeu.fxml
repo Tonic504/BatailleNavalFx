@@ -1,14 +1,444 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.battaillenavalfx.JeuControlleur"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<VBox alignment="CENTER" maxHeight="1200.0" maxWidth="700.0" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.battaillenavalfx.JeuControlleur">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="Option" />
+         </children>
+      </HBox>
+      <StackPane maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="330.0" fitWidth="330.0" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../Image/Eau.jpg" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="VGrilleOrdi" alignment="CENTER" gridLinesVisible="true" maxHeight="330.0" maxWidth="330.0" minHeight="330.0" minWidth="330.0" prefHeight="330.0" prefWidth="330.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="1" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="2" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="3" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="4" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="5" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="6" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="7" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="8" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="9" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="9">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="10" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="10">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="A" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="B" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="C" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="D" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="E" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="F" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="G" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="H" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="I" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="J" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </StackPane>
+      <StackPane layoutX="160.0" layoutY="320.0" maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="330.0" fitWidth="330.0" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../Image/Eau.jpg" />
+               </image>
+            </ImageView>
+            <GridPane fx:id="VGrille" alignment="CENTER" gridLinesVisible="true" maxHeight="330.0" maxWidth="330.0" minHeight="330.0" minWidth="330.0" prefHeight="330.0" prefWidth="330.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="1" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="2" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="3" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="4" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="5" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="6" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="7" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="8" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="9" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="9">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="10" textAlignment="CENTER" textFill="#fff7f7" GridPane.columnIndex="10">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="A" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="B" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="C" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="D" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="E" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="F" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="G" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="H" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="I" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="9">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="J" textAlignment="CENTER" textFill="#fff7f7" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="Serif Bold" size="12.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Label>
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </StackPane>
+      <Button mnemonicParsing="false" onAction="#ContinuerPartie" prefHeight="121.0" prefWidth="184.0" text="Tirer">
+         <graphic>
+            <Label fx:id="visionPositionTir" text="Position ||" />
+         </graphic>
+      </Button>
+   </children>
+</VBox>

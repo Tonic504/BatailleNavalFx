@@ -5,17 +5,19 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
-
+import com.example.battaillenavalfx.*;
 import java.io.IOException;
-
+/**/
 public class HelloApplication extends Application {
 
     private Stage stage;
 
+    private Grille grille;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
         stage = primaryStage;
+        grille = new Grille();
 
         FXMLLoader fxmlLoader1 = new FXMLLoader(HelloApplication.class.getResource("scene-bienvenue.fxml"));
         Scene scene1 = new Scene(fxmlLoader1.load(), 600, 800);
@@ -32,6 +34,14 @@ public class HelloApplication extends Application {
         InitialisationController controller1 = fxmlLoader2.getController();
         controller1.setStage(primaryStage);
         controller1.setScene2(scene3);
+        controller1.setGrille(grille);
+        controller1.setHelloApplication(this);
+
+        JeuControlleur jeuControlleur = fxmlLoader3.getController();
+
+        jeuControlleur.setHelloApplication(this);
+
+
 
 
         stage.setTitle("Bataille Navale");
@@ -50,4 +60,9 @@ public class HelloApplication extends Application {
     public Stage getStage() {
         return stage;
     }
+
+    public Grille getGrille() {
+        return grille;
+    }
+    public void setGrille(Grille grille){this.grille = grille;}
 }

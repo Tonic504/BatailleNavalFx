@@ -13,7 +13,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import com.example.battaillenavalfx.Grille;
 import javafx.scene.transform.Rotate;
 import javafx.stage.Stage;
 
@@ -25,6 +24,7 @@ public class InitialisationController implements Initializable {
 
     private Stage stage;
     private Scene scene2;
+    private HelloApplication helloApplication;
     private static final int ROWS = 11;
     private static final int COLS = 11;
 
@@ -108,6 +108,8 @@ public class InitialisationController implements Initializable {
 
         if(!grilleValide()){
             grilleJoueur.gridPane = VGrille;
+
+            helloApplication.setGrille(grilleJoueur);
             if (stage != null && scene2 != null) {
                 stage.setScene(scene2);
             }
@@ -247,6 +249,15 @@ public class InitialisationController implements Initializable {
         this.scene2 = scene2;
     }
 
+
+
+    public void setGrille(Grille grille) {
+        this.grilleJoueur = grille;
+    }
+
+    public void setHelloApplication(HelloApplication helloApplication) {
+        this.helloApplication = helloApplication;
+    }
 }
 
 
