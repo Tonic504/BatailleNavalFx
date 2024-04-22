@@ -5,6 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Controlleur du menu de jeu
+ */
 public class BienvenueControlleur{
 
     private Stage stage;
@@ -32,6 +35,8 @@ public class BienvenueControlleur{
 
     @FXML
     void tricher(ActionEvent event) {
-        // Méthode pour tricher
+        if (stage != null && scene2 != null) {
+            stage.setScene(scene2);
+        }
     }
 }
